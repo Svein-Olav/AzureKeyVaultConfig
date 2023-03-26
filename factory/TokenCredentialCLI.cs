@@ -14,13 +14,13 @@ public class TokenCredentialCLI : ITokenCredential
                     }
             };
                             
-            defaultAzureCredentialOptions.ExcludeAzureCliCredential = true; // false ;
+            defaultAzureCredentialOptions.ExcludeAzureCliCredential = true;
             defaultAzureCredentialOptions.ExcludeEnvironmentCredential = true;
-            defaultAzureCredentialOptions.ExcludeInteractiveBrowserCredential = false;
+            defaultAzureCredentialOptions.ExcludeInteractiveBrowserCredential = true;
             defaultAzureCredentialOptions.ExcludeManagedIdentityCredential = true;
             defaultAzureCredentialOptions.ExcludeSharedTokenCacheCredential = true;
-            defaultAzureCredentialOptions.ExcludeVisualStudioCodeCredential = true;
-            defaultAzureCredentialOptions.ExcludeVisualStudioCredential = true;
+            defaultAzureCredentialOptions.ExcludeVisualStudioCodeCredential = false;
+            defaultAzureCredentialOptions.ExcludeVisualStudioCredential = false;
 
             
 
