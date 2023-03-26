@@ -4,7 +4,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 ITokenCredential credential = AzureCredentialFactory.GetTokenUsingCLICredential();
 
-//builder.Logging.ClearProviders().AddConsole();
 using AzureEventSourceListener listener = AzureEventSourceListener.CreateConsoleLogger();
 
 builder.Configuration.AddAzureKeyVault(
