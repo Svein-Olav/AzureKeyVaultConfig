@@ -12,6 +12,7 @@ builder.Configuration.AddAzureKeyVault(
 
 var app = builder.Build();
 
-app.MapGet("/", (IConfiguration config) => $" passord :  {config["passord"]}"  );
+app.MapGet("/level", (IConfiguration config) => $" passord :  {config["level1:level2"]}"  );
+app.MapGet("/passord", (IConfiguration config) => $" passord :  {config["passord"]}"  );
 
 app.Run();
