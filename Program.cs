@@ -8,6 +8,6 @@ ITokenCredential credential = AzureCredentialFactory.GetTokenUsingCLICredential(
 
 var app = builder.Build();
 
-app.MapGet("/", (IConfiguration config) => config["test"]  );
+app.MapGet("/", (IConfiguration config) => $" passord :  {config["passord"]}"  );
 
 app.Run();

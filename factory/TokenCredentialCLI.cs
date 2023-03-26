@@ -14,9 +14,9 @@ public class TokenCredentialCLI : ITokenCredential
                     }
             };
                             
-            defaultAzureCredentialOptions.ExcludeAzureCliCredential = false ;
+            defaultAzureCredentialOptions.ExcludeAzureCliCredential = true; // false ;
             defaultAzureCredentialOptions.ExcludeEnvironmentCredential = true;
-            defaultAzureCredentialOptions.ExcludeInteractiveBrowserCredential = true;
+            defaultAzureCredentialOptions.ExcludeInteractiveBrowserCredential = false;
             defaultAzureCredentialOptions.ExcludeManagedIdentityCredential = true;
             defaultAzureCredentialOptions.ExcludeSharedTokenCacheCredential = true;
             defaultAzureCredentialOptions.ExcludeVisualStudioCodeCredential = true;
